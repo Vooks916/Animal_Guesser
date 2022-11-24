@@ -26,7 +26,7 @@ def getNewQuestion():
   animal = input("What was your animal?\n")
   question = input("\nPlease type a yes/no question where the answer for your animal (%s) is different than the answer for a(n) %s\n" % (animal, nodeList[currentNode].data))
   while validResponse == False:
-    answer = input("\nNow please answer the question you just submitted for your animal (%s).\n" % (animal))
+    answer = input("\nNow please answer the question  you just submitted (%s) for your animal (%s).\n" % (question, animal))
     #If the answer to the created question for the new animal is yes, add it to the yes branch of the tree
     if answer[0].lower() == "y":
       validResponse = True
